@@ -193,10 +193,12 @@ p { margin: 0; }
 .stack { display: flex; flex-direction: column; gap: 18px; }
 .split { display: flex; flex-wrap: wrap; gap: 64px; align-items: center; }
 .split > * { min-width: 0; }
-.photo-ph {
-  aspect-ratio: 4 / 5; border-radius: 220px 220px 24px 24px; background: var(--peach);
-  display: flex; align-items: center; justify-content: center; color: var(--muted);
-  font-size: 15px; text-align: center; padding: 24px;
+.portrait {
+  width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%;
+  border-radius: 220px 220px 24px 24px; background: var(--peach);
+}
+@media (max-width: 600px) {
+  .portrait { aspect-ratio: 4 / 4.4; object-position: 50% 18%; border-radius: 160px 160px 18px 18px; }
 }
 .section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; }
 .section-head .link-line { align-self: auto; }
@@ -268,7 +270,8 @@ p { margin: 0; }
 /* About page */
 .about-photo { flex: 1 1 380px; position: relative; }
 .about-photo .blob { position: absolute; width: 240px; height: 240px; border-radius: 50%; background: var(--sage); left: -40px; top: -30px; }
-.about-photo .photo-ph { position: relative; border-radius: 240px 240px 28px 28px; }
+.about-photo .portrait { position: relative; border-radius: 240px 240px 28px 28px; }
+@media (max-width: 600px) { .about-photo .portrait { border-radius: 160px 160px 18px 18px; } }
 .timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .timeline li { display: flex; gap: 28px; padding: 22px 0; border-bottom: 1px solid var(--line); }
 .timeline .tag { flex: 0 0 120px; font-family: var(--serif); font-size: 20px; color: var(--clay); }
@@ -301,6 +304,11 @@ p { margin: 0; }
 .svc-panel .btn { align-self: flex-start; margin-top: 8px; min-height: 50px; padding: 0 26px; }
 .pills { display: flex; flex-wrap: wrap; gap: 8px; }
 .pill { background: var(--bg); border-radius: 999px; padding: 6px 16px; font-size: 14px; color: var(--muted); }
+.pills-sand .pill { background: var(--sand); }
+.svc-panel .body { color: #4A5650; }
+.topics { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+.topics .pill { font-size: 15px; color: var(--ink); }
+.svc-note { padding: 14px 18px; background: var(--bg); border-radius: 16px; color: var(--muted); font-size: 16px; }
 @media (max-width: 600px) {
   .svc-panel { padding: 28px 22px; border-radius: 24px; }
   .svc-panel h2 { font-size: 32px; }

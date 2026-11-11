@@ -38,8 +38,8 @@ request already written (`mailto:`). Set the address in **one** place:
 
 ## Placeholders still to fill
 
-Search for `[` in the HTML: email, phone, session price, Ιωάννα's photo, the
-"Λίγα λόγια από την Ιωάννα" text for each service, and the privacy policy text.
+Search for `[` in the HTML: email, phone, session price, and the privacy policy
+text.
 
 ## Fonts
 
