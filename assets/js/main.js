@@ -1,7 +1,7 @@
 // Ιωάννα Τσάτη — small progressive enhancements. Every page works without JS.
 
 // The address the appointment form sends to. Change it here only.
-const CONTACT_EMAIL = "[email@domain.gr]";
+const CONTACT_EMAIL = "ioannatsatipsy@gmail.com";
 
 // Mobile menu
 (() => {
